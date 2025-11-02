@@ -1,0 +1,101 @@
+/* ------------------------------
+   FONT IMPORT (Google Fonts)
+--------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ------------------------------
+   GLOBAL STYLES
+--------------------------------*/
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F9F9FF; /* very light lavender background */
+  color: #333;
+}
+
+/* ------------------------------
+   NAVBAR STYLES
+--------------------------------*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 60px;
+  background-color: #E8E3FF; /* soft lavender */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Left side: logo + name */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-section img {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+}
+
+.logo-section h1 {
+  font-size: 26px;
+  color: #4A3AFF; /* deep violet tone */
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Center links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  margin-left: 40px; /* space after logo */
+  flex: 1;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4A3AFF;
+}
+
+/* Right side: buttons */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-buttons button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-buttons .login {
+  background-color: transparent;
+  border: 1.5px solid #4A3AFF;
+  color: #4A3AFF;
+}
+
+.nav-buttons .login:hover {
+  background-color: #4A3AFF;
+  color: white;
+}
+
+.nav-buttons .signup {
+  background-color: #4A3AFF;
+  color: white;
+}
+
+.nav-buttons .signup:hover {
+  background-color: #372AFF;
+}
